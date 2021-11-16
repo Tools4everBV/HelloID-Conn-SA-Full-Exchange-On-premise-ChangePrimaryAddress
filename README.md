@@ -6,6 +6,12 @@ This HelloID Service Automation Delegated Form provides the functionality to Cha
  3. Select from the existing emailaddresses a new primary Email Address. (The current Primary is marked isPrimary = True)
  4. Update the primary EmailAddress
 
+## Versioning
+| Version | Description | Date |
+| - | - | - |
+| 1.0.1   | Added version number and updated all-in-one script | 2021/11/16  |
+| 1.0.0   | Initial release | 2021/04/29  |
+
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 * [Description](#description)
@@ -48,5 +54,8 @@ This Powershell data source runs a query to search for the emailaddresses of the
 #### Delegated form task '[task]_Exchange-mailbox-change-primary-address.ps1'
 This delegated form task wil create the room mailbox
 
-# HelloID Docs
+## Getting help
+_If you need help, feel free to ask questions on our [forum](https://forum.helloid.com/forum/helloid-connectors/service-automation/249-helloid-sa-exchange-onpremises-change-primary-email-address)_
+
+## HelloID Docs
 The official HelloID documentation can be found at: https://docs.helloid.com/
