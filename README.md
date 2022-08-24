@@ -9,6 +9,7 @@ This HelloID Service Automation Delegated Form provides the functionality to Cha
 ## Versioning
 | Version | Description | Date |
 | - | - | - |
+| 1.0.2   | Added version number and updated code for SA-agent and auditlogging | 2022/08/24  |
 | 1.0.1   | Added version number and updated all-in-one script | 2021/11/16  |
 | 1.0.0   | Initial release | 2021/04/29  |
 
@@ -51,7 +52,7 @@ This Powershell data source runs a query to search for the mailbox.
 #### Powershell data source '[powershell-datasource]_Exchange-mailbox-change-primary-address-get-emailaddresses.ps1'
 This Powershell data source runs a query to search for the emailaddresses of the selected mailbox.
 
-#### Delegated form task '[task]_Exchange-mailbox-change-primary-address.ps1'
+#### Delegated form task '[task]_Exchange on-premise - Mailbox change primary address'
 This delegated form task wil create the room mailbox
 
 ## Getting help
