@@ -10,7 +10,7 @@ $newPrimaryMail = $form.grid.EmailAddress
 # Connect to Exchange
 try {
     $adminSecurePassword = ConvertTo-SecureString -String "$ExchangeAdminPassword" -AsPlainText -Force
-    $adminCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $ExchangeAdminUsername, $adminSecurePassword
+    $adminCredential = [System.Management.Automation.PSCredential]::new($ExchangeAdminUsername,$adminSecurePassword)
     $sessionOption = New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck
     $exchangeSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $exchangeConnectionUri -Credential $adminCredential -SessionOption $sessionOption -ErrorAction Stop 
     #-AllowRedirection
@@ -69,7 +69,7 @@ else {
             Get-Mailbox @ParamsGetMailbox
         } -ArgumentList $ParamsGetMailbox
     
-        $list = New-Object System.Collections.ArrayList
+        $list = [System.Collections.ArrayList]::new()
         foreach ($address in $mailBoxes.EmailAddresses) {
             $prefix = $address.Split(":")[0]
             $mail = $address.Split(":")[1]
